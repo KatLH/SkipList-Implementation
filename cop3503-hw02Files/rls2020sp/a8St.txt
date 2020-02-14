@@ -1,0 +1,935 @@
+For the input file named H2in-a8.txt
+With the RNG unseeded,
+3349 integer not found - delete not successful
+4716 integer not found - delete not successful
+2912 integer not found - delete not successful
+2291 integer not found - delete not successful
+3891 integer not found - delete not successful
+2722 integer not found - delete not successful
+1598 integer not found - delete not successful
+2390 integer not found - delete not successful
+192 integer not found - delete not successful
+2234 integer not found - delete not successful
+2201 integer not found - delete not successful
+535 integer not found - delete not successful
+1298 integer not found - delete not successful
+3392 integer not found - delete not successful
+3713 integer not found - delete not successful
+1056 integer not found - delete not successful
+2788 integer not found - delete not successful
+4002 integer not found - delete not successful
+719 integer not found - delete not successful
+3985 integer not found - delete not successful
+2568 integer not found - delete not successful
+1374 integer not found - delete not successful
+132 integer not found - delete not successful
+787 integer not found - delete not successful
+468 integer not found - delete not successful
+4328 integer not found - delete not successful
+3492 integer not found - delete not successful
+3704 integer not found - delete not successful
+3164 integer not found - delete not successful
+2741 integer not found - delete not successful
+3021 integer not found - delete not successful
+3554 integer not found - delete not successful
+526 integer not found - delete not successful
+1679 integer not found - delete not successful
+2224 integer not found - delete not successful
+3993 integer not found - delete not successful
+2688 integer not found - delete not successful
+4827 integer not found - delete not successful
+4006 integer not found - delete not successful
+1383 integer not found - delete not successful
+3019 integer not found - delete not successful
+1601 integer not found - delete not successful
+1382 integer not found - delete not successful
+3337 integer not found - delete not successful
+3600 integer not found - delete not successful
+883 integer not found - delete not successful
+3535 integer not found - delete not successful
+500 integer not found - delete not successful
+3986 integer not found - delete not successful
+4707 integer not found - delete not successful
+1306 integer not found - delete not successful
+3021 integer not found - delete not successful
+728 integer not found - delete not successful
+231 integer not found - delete not successful
+2548 integer not found - delete not successful
+427 integer not found - delete not successful
+370 integer not found - delete not successful
+2031 integer not found - delete not successful
+425 integer not found - delete not successful
+4794 integer not found - delete not successful
+3520 integer not found - delete not successful
+1505 integer not found - delete not successful
+4676 deleted
+1443 integer not found - delete not successful
+4114 integer not found - delete not successful
+3773 integer not found - delete not successful
+2461 integer not found - delete not successful
+1820 integer not found - delete not successful
+2058 integer not found - delete not successful
+1963 integer not found - delete not successful
+2931 integer not found - delete not successful
+1289 integer not found - delete not successful
+1286 integer not found - delete not successful
+3886 integer not found - delete not successful
+3894 integer not found - delete not successful
+183 integer not found - delete not successful
+528 integer not found - delete not successful
+1684 integer not found - delete not successful
+2439 integer not found - delete not successful
+2930 deleted
+4905 integer not found - delete not successful
+4795 integer not found - delete not successful
+725 integer not found - delete not successful
+1727 integer not found - delete not successful
+3084 integer not found - delete not successful
+4632 integer not found - delete not successful
+2968 integer not found - delete not successful
+2237 integer not found - delete not successful
+1720 integer not found - delete not successful
+1765 integer not found - delete not successful
+2883 integer not found - delete not successful
+137 integer not found - delete not successful
+703 integer not found - delete not successful
+4558 integer not found - delete not successful
+1195 integer not found - delete not successful
+1424 integer not found - delete not successful
+3406 integer not found - delete not successful
+4161 integer not found - delete not successful
+4643 integer not found - delete not successful
+851 integer not found - delete not successful
+65 integer not found - delete not successful
+4776 integer not found - delete not successful
+589 integer not found - delete not successful
+325 integer not found - delete not successful
+2326 integer not found - delete not successful
+1838 integer not found - delete not successful
+711 deleted
+1666 integer not found - delete not successful
+556 integer not found - delete not successful
+4957 integer not found - delete not successful
+3306 integer not found - delete not successful
+852 integer not found - delete not successful
+1788 integer not found - delete not successful
+458 deleted
+413 integer not found - delete not successful
+2771 integer not found - delete not successful
+3444 integer not found - delete not successful
+950 integer not found - delete not successful
+593 deleted
+4810 integer not found - delete not successful
+3846 integer not found - delete not successful
+4599 integer not found - delete not successful
+825 integer not found - delete not successful
+3935 integer not found - delete not successful
+2241 integer not found - delete not successful
+2828 deleted
+108 integer not found - delete not successful
+796 deleted
+2787 integer not found - delete not successful
+2469 integer not found - delete not successful
+2288 integer not found - delete not successful
+2787 integer not found - delete not successful
+2464 integer not found - delete not successful
+129 deleted
+4433 deleted
+1725 integer not found - delete not successful
+3795 integer not found - delete not successful
+1964 integer not found - delete not successful
+3874 integer not found - delete not successful
+649 integer not found - delete not successful
+1271 integer not found - delete not successful
+2398 integer not found - delete not successful
+3386 integer not found - delete not successful
+4303 integer not found - delete not successful
+3754 integer not found - delete not successful
+4289 integer not found - delete not successful
+4462 integer not found - delete not successful
+697 integer not found - delete not successful
+2538 deleted
+3744 integer not found - delete not successful
+1348 integer not found - delete not successful
+2893 integer not found - delete not successful
+1498 integer not found - delete not successful
+4384 integer not found - delete not successful
+1996 integer not found - delete not successful
+4558 integer not found - delete not successful
+2906 integer not found - delete not successful
+1804 integer not found - delete not successful
+4114 integer not found - delete not successful
+1972 integer not found - delete not successful
+1726 integer not found - delete not successful
+498 integer not found - delete not successful
+2103 integer not found - delete not successful
+777 integer not found - delete not successful
+1812 integer not found - delete not successful
+3815 integer not found - delete not successful
+4158 integer not found - delete not successful
+1657 integer not found - delete not successful
+3786 integer not found - delete not successful
+1382 integer not found - delete not successful
+621 integer not found - delete not successful
+4699 integer not found - delete not successful
+4597 integer not found - delete not successful
+3039 integer not found - delete not successful
+4599 integer not found - delete not successful
+3739 integer not found - delete not successful
+1451 integer not found - delete not successful
+1753 integer not found - delete not successful
+1938 integer not found - delete not successful
+2701 deleted
+1500 integer not found - delete not successful
+4210 integer not found - delete not successful
+1852 integer not found - delete not successful
+3504 integer not found - delete not successful
+2595 integer not found - delete not successful
+2506 integer not found - delete not successful
+4048 integer not found - delete not successful
+115 integer not found - delete not successful
+1915 integer not found - delete not successful
+3599 integer not found - delete not successful
+1315 integer not found - delete not successful
+3229 deleted
+174 integer not found - delete not successful
+846 deleted
+1956 integer not found - delete not successful
+3396 integer not found - delete not successful
+2919 integer not found - delete not successful
+2999 integer not found - delete not successful
+3163 integer not found - delete not successful
+12 integer not found - delete not successful
+3947 integer not found - delete not successful
+the current Skip List is shown below: 
+---infinity
+ 24;  24; 
+ 25;  25; 
+ 29; 
+ 32; 
+ 37; 
+ 56; 
+ 59; 
+ 69; 
+ 74; 
+ 96; 
+ 101; 
+ 106; 
+ 117;  117; 
+ 135; 
+ 145;  145; 
+ 156; 
+ 161; 
+ 162; 
+ 169; 
+ 180; 
+ 184; 
+ 191; 
+ 201; 
+ 219; 
+ 228; 
+ 236; 
+ 237; 
+ 248; 
+ 250; 
+ 264; 
+ 283; 
+ 287; 
+ 289;  289; 
+ 291; 
+ 294;  294; 
+ 295; 
+ 296; 
+ 303; 
+ 308; 
+ 310; 
+ 313; 
+ 315;  315; 
+ 323; 
+ 342; 
+ 344; 
+ 346;  346; 
+ 361; 
+ 369;  369; 
+ 370; 
+ 376; 
+ 377; 
+ 382; 
+ 386; 
+ 390; 
+ 391;  391; 
+ 392; 
+ 397; 
+ 403; 
+ 410; 
+ 415; 
+ 425; 
+ 439;  439; 
+ 445;  445; 
+ 455;  455;  455; 
+ 456; 
+ 462;  462;  462;  462; 
+ 465; 
+ 468; 
+ 470; 
+ 472; 
+ 475; 
+ 477; 
+ 486;  486;  486; 
+ 489; 
+ 499; 
+ 502; 
+ 512;  512;  512; 
+ 513; 
+ 518; 
+ 550; 
+ 557; 
+ 559; 
+ 563; 
+ 564; 
+ 565; 
+ 571; 
+ 573; 
+ 587;  587; 
+ 616; 
+ 625; 
+ 628; 
+ 630; 
+ 644; 
+ 647;  647; 
+ 652; 
+ 654; 
+ 664;  664; 
+ 670; 
+ 675;  675; 
+ 685; 
+ 687; 
+ 705; 
+ 714; 
+ 719;  719;  719; 
+ 731; 
+ 735; 
+ 737;  737; 
+ 740; 
+ 764; 
+ 772; 
+ 773; 
+ 774; 
+ 778; 
+ 780; 
+ 808;  808; 
+ 812;  812; 
+ 829; 
+ 844; 
+ 853; 
+ 857; 
+ 860; 
+ 866;  866;  866; 
+ 873;  873; 
+ 880; 
+ 885; 
+ 892; 
+ 898; 
+ 921;  921; 
+ 922; 
+ 928; 
+ 929; 
+ 930; 
+ 932;  932; 
+ 933; 
+ 938;  938; 
+ 952; 
+ 962; 
+ 967; 
+ 979; 
+ 985; 
+ 991; 
+ 1000; 
+ 1017;  1017; 
+ 1020; 
+ 1027; 
+ 1029; 
+ 1038; 
+ 1043;  1043; 
+ 1046; 
+ 1051; 
+ 1052;  1052; 
+ 1084; 
+ 1086; 
+ 1089; 
+ 1091; 
+ 1096; 
+ 1102;  1102; 
+ 1114; 
+ 1126; 
+ 1129;  1129;  1129; 
+ 1133; 
+ 1141; 
+ 1142; 
+ 1153;  1153; 
+ 1177;  1177; 
+ 1180; 
+ 1190; 
+ 1218; 
+ 1220; 
+ 1221;  1221; 
+ 1237;  1237; 
+ 1242; 
+ 1245; 
+ 1247;  1247; 
+ 1269; 
+ 1281; 
+ 1313; 
+ 1316; 
+ 1320; 
+ 1321; 
+ 1334;  1334; 
+ 1349; 
+ 1354; 
+ 1363; 
+ 1364; 
+ 1368; 
+ 1371; 
+ 1380; 
+ 1388; 
+ 1397; 
+ 1404;  1404; 
+ 1408; 
+ 1417; 
+ 1420;  1420; 
+ 1421;  1421; 
+ 1425; 
+ 1430; 
+ 1438; 
+ 1441; 
+ 1447; 
+ 1453; 
+ 1458;  1458; 
+ 1471; 
+ 1472; 
+ 1478; 
+ 1495; 
+ 1503; 
+ 1505; 
+ 1512; 
+ 1516; 
+ 1526;  1526; 
+ 1533;  1533; 
+ 1541; 
+ 1552; 
+ 1563; 
+ 1567; 
+ 1573; 
+ 1577; 
+ 1580;  1580; 
+ 1589;  1589; 
+ 1594; 
+ 1595; 
+ 1596; 
+ 1604;  1604; 
+ 1606; 
+ 1610; 
+ 1615; 
+ 1618;  1618;  1618;  1618; 
+ 1649; 
+ 1659; 
+ 1663; 
+ 1678; 
+ 1689;  1689;  1689; 
+ 1691; 
+ 1695; 
+ 1698; 
+ 1708; 
+ 1717;  1717; 
+ 1719;  1719; 
+ 1735; 
+ 1740; 
+ 1742;  1742; 
+ 1744;  1744; 
+ 1752;  1752; 
+ 1755;  1755; 
+ 1756;  1756;  1756;  1756;  1756; 
+ 1763; 
+ 1771; 
+ 1779; 
+ 1795; 
+ 1796; 
+ 1801;  1801; 
+ 1802; 
+ 1807;  1807; 
+ 1823; 
+ 1842; 
+ 1843; 
+ 1844;  1844; 
+ 1851; 
+ 1857; 
+ 1861;  1861; 
+ 1864; 
+ 1867; 
+ 1868;  1868;  1868; 
+ 1875; 
+ 1881; 
+ 1882; 
+ 1885;  1885; 
+ 1886; 
+ 1888; 
+ 1895; 
+ 1900; 
+ 1905;  1905;  1905; 
+ 1911;  1911; 
+ 1917; 
+ 1918; 
+ 1923; 
+ 1928; 
+ 1934; 
+ 1937; 
+ 1939; 
+ 1942; 
+ 1949; 
+ 1990; 
+ 2003; 
+ 2004;  2004; 
+ 2010; 
+ 2015;  2015; 
+ 2021; 
+ 2060; 
+ 2066;  2066; 
+ 2067; 
+ 2073; 
+ 2076; 
+ 2096; 
+ 2107; 
+ 2110;  2110;  2110; 
+ 2114; 
+ 2124; 
+ 2125; 
+ 2139; 
+ 2143; 
+ 2147; 
+ 2150; 
+ 2151; 
+ 2154; 
+ 2155;  2155; 
+ 2165;  2165; 
+ 2171; 
+ 2173; 
+ 2175; 
+ 2177;  2177; 
+ 2180; 
+ 2183; 
+ 2186; 
+ 2191; 
+ 2197; 
+ 2201; 
+ 2207; 
+ 2229; 
+ 2232; 
+ 2248; 
+ 2258; 
+ 2272;  2272;  2272; 
+ 2274; 
+ 2278; 
+ 2284; 
+ 2302; 
+ 2304; 
+ 2317; 
+ 2318; 
+ 2319; 
+ 2323; 
+ 2333; 
+ 2336;  2336; 
+ 2345;  2345; 
+ 2346; 
+ 2349; 
+ 2366; 
+ 2375; 
+ 2385;  2385; 
+ 2386; 
+ 2390; 
+ 2391; 
+ 2392; 
+ 2393; 
+ 2396; 
+ 2402; 
+ 2408; 
+ 2420; 
+ 2421; 
+ 2430;  2430; 
+ 2452; 
+ 2472; 
+ 2475; 
+ 2477; 
+ 2493;  2493; 
+ 2496; 
+ 2499; 
+ 2510; 
+ 2512;  2512;  2512; 
+ 2516; 
+ 2520; 
+ 2530; 
+ 2535; 
+ 2544; 
+ 2549; 
+ 2562;  2562; 
+ 2567;  2567; 
+ 2572; 
+ 2579; 
+ 2580; 
+ 2588;  2588; 
+ 2594; 
+ 2598; 
+ 2599; 
+ 2606; 
+ 2608;  2608; 
+ 2612;  2612; 
+ 2614; 
+ 2621; 
+ 2624; 
+ 2634; 
+ 2636;  2636; 
+ 2642; 
+ 2645;  2645; 
+ 2697; 
+ 2704; 
+ 2712; 
+ 2725; 
+ 2727;  2727; 
+ 2748; 
+ 2766; 
+ 2767;  2767; 
+ 2768;  2768; 
+ 2776; 
+ 2777;  2777;  2777; 
+ 2800; 
+ 2805; 
+ 2810; 
+ 2811; 
+ 2812;  2812; 
+ 2821; 
+ 2850;  2850; 
+ 2870; 
+ 2874; 
+ 2875; 
+ 2900; 
+ 2903; 
+ 2923; 
+ 2925;  2925;  2925; 
+ 2928; 
+ 2945;  2945; 
+ 2946; 
+ 2950; 
+ 2953; 
+ 2964; 
+ 2972; 
+ 2973;  2973;  2973; 
+ 2983; 
+ 3008;  3008;  3008;  3008; 
+ 3011; 
+ 3027;  3027;  3027; 
+ 3047;  3047; 
+ 3071;  3071; 
+ 3075; 
+ 3080;  3080; 
+ 3087; 
+ 3095;  3095; 
+ 3102; 
+ 3104;  3104; 
+ 3106; 
+ 3108;  3108; 
+ 3113; 
+ 3119; 
+ 3122; 
+ 3126; 
+ 3129; 
+ 3130; 
+ 3131; 
+ 3142; 
+ 3144; 
+ 3152;  3152; 
+ 3154;  3154;  3154; 
+ 3158; 
+ 3177;  3177; 
+ 3179; 
+ 3181;  3181;  3181; 
+ 3183; 
+ 3186; 
+ 3188; 
+ 3198; 
+ 3199; 
+ 3205; 
+ 3210; 
+ 3230; 
+ 3234; 
+ 3238;  3238; 
+ 3239;  3239; 
+ 3254; 
+ 3264; 
+ 3269; 
+ 3272;  3272; 
+ 3276;  3276; 
+ 3280;  3280; 
+ 3284; 
+ 3299; 
+ 3320; 
+ 3327; 
+ 3331; 
+ 3332;  3332; 
+ 3336; 
+ 3338; 
+ 3339;  3339; 
+ 3341; 
+ 3342; 
+ 3345; 
+ 3348; 
+ 3354; 
+ 3357; 
+ 3359; 
+ 3366; 
+ 3374; 
+ 3385;  3385; 
+ 3393; 
+ 3395; 
+ 3399; 
+ 3408;  3408;  3408; 
+ 3413; 
+ 3438;  3438;  3438;  3438; 
+ 3440; 
+ 3453; 
+ 3454;  3454; 
+ 3457;  3457; 
+ 3475; 
+ 3476;  3476;  3476; 
+ 3479; 
+ 3481; 
+ 3488; 
+ 3499;  3499; 
+ 3529; 
+ 3535; 
+ 3538; 
+ 3542; 
+ 3549; 
+ 3568; 
+ 3572; 
+ 3584; 
+ 3585; 
+ 3586; 
+ 3603; 
+ 3606; 
+ 3612; 
+ 3614;  3614; 
+ 3615; 
+ 3616;  3616; 
+ 3620; 
+ 3630; 
+ 3642; 
+ 3661; 
+ 3668; 
+ 3669;  3669; 
+ 3674; 
+ 3679; 
+ 3693;  3693; 
+ 3696;  3696; 
+ 3698;  3698; 
+ 3702; 
+ 3704; 
+ 3707;  3707; 
+ 3711; 
+ 3714; 
+ 3715; 
+ 3717; 
+ 3726; 
+ 3745; 
+ 3747; 
+ 3760; 
+ 3768; 
+ 3789; 
+ 3794; 
+ 3798; 
+ 3814; 
+ 3815; 
+ 3832; 
+ 3835;  3835;  3835; 
+ 3861; 
+ 3864; 
+ 3866; 
+ 3880; 
+ 3882; 
+ 3885; 
+ 3887; 
+ 3893;  3893; 
+ 3894; 
+ 3898; 
+ 3899; 
+ 3917;  3917; 
+ 3923; 
+ 3929;  3929; 
+ 3932; 
+ 3941; 
+ 3944; 
+ 3945;  3945; 
+ 3961;  3961; 
+ 3971; 
+ 3972; 
+ 3981; 
+ 3999;  3999;  3999;  3999; 
+ 4001;  4001; 
+ 4005; 
+ 4007; 
+ 4023;  4023;  4023; 
+ 4033;  4033; 
+ 4038; 
+ 4039; 
+ 4043;  4043; 
+ 4056; 
+ 4064; 
+ 4065; 
+ 4068; 
+ 4074; 
+ 4083; 
+ 4086; 
+ 4091; 
+ 4099; 
+ 4102; 
+ 4105; 
+ 4109;  4109; 
+ 4123; 
+ 4133; 
+ 4135; 
+ 4151; 
+ 4153; 
+ 4159; 
+ 4171; 
+ 4175;  4175;  4175; 
+ 4178; 
+ 4183; 
+ 4191; 
+ 4210; 
+ 4211;  4211; 
+ 4212; 
+ 4213; 
+ 4214;  4214; 
+ 4216; 
+ 4227;  4227; 
+ 4232; 
+ 4243; 
+ 4245;  4245; 
+ 4246; 
+ 4248; 
+ 4249; 
+ 4251; 
+ 4254;  4254;  4254; 
+ 4255; 
+ 4256;  4256; 
+ 4258; 
+ 4261;  4261; 
+ 4262; 
+ 4263; 
+ 4269;  4269; 
+ 4273;  4273;  4273; 
+ 4295; 
+ 4297; 
+ 4309;  4309; 
+ 4328; 
+ 4329; 
+ 4336; 
+ 4342; 
+ 4349; 
+ 4352; 
+ 4356;  4356; 
+ 4362; 
+ 4374; 
+ 4385; 
+ 4387; 
+ 4397; 
+ 4401; 
+ 4403; 
+ 4423;  4423; 
+ 4443; 
+ 4450; 
+ 4456; 
+ 4460; 
+ 4475; 
+ 4485; 
+ 4486; 
+ 4502; 
+ 4522; 
+ 4538;  4538;  4538; 
+ 4549; 
+ 4556;  4556; 
+ 4558;  4558;  4558;  4558; 
+ 4560; 
+ 4561; 
+ 4565; 
+ 4567; 
+ 4582; 
+ 4590; 
+ 4595; 
+ 4604; 
+ 4613;  4613; 
+ 4617; 
+ 4628;  4628; 
+ 4633; 
+ 4637; 
+ 4640; 
+ 4643;  4643; 
+ 4655; 
+ 4661; 
+ 4669;  4669; 
+ 4685; 
+ 4688;  4688; 
+ 4702; 
+ 4727; 
+ 4731;  4731;  4731;  4731; 
+ 4754; 
+ 4765; 
+ 4772;  4772; 
+ 4774; 
+ 4782; 
+ 4785; 
+ 4786;  4786; 
+ 4791; 
+ 4792; 
+ 4796; 
+ 4807;  4807; 
+ 4821; 
+ 4825; 
+ 4827; 
+ 4830;  4830;  4830; 
+ 4832;  4832;  4832; 
+ 4849;  4849; 
+ 4863; 
+ 4866; 
+ 4868;  4868; 
+ 4874; 
+ 4875;  4875;  4875; 
+ 4878; 
+ 4880; 
+ 4885;  4885; 
+ 4897; 
+ 4901;  4901; 
+ 4902; 
+ 4915;  4915;  4915; 
+ 4917; 
+ 4918; 
+ 4922; 
+ 4932; 
+ 4934; 
+ 4938; 
+ 4940;  4940; 
+ 4944; 
+ 4945; 
+ 4951;  4951; 
+ 4952; 
+ 4954;  4954; 
+ 4959; 
+ 4971; 
+ 4972; 
+ 4979; 
+ 4980; 
+ 4982; 
+ 4985; 
+ 4993; 
+ 4995;  4995;  4995; 
+ 4997; 
++++infinity
+---End of Skip List---

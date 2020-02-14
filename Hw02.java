@@ -13,6 +13,12 @@ import java.util.*;
 
 
 class SkipList {
+    static private Random val = new Random();
+
+    static int randomNumGen(int n) {
+        return Math.abs(val.nextInt()) % n;
+    }
+
     void insert() {}
     void promote() {}
     void delete() {}
@@ -53,6 +59,7 @@ class ProcessCommands {
 
     /* Run commands one by one from array List */
     void runCommands(String[] commandArgs, SkipList skiplist) {
+
         String command = commandArgs[0];
 
         if (command.trim().equalsIgnoreCase("i")) {}
@@ -60,6 +67,8 @@ class ProcessCommands {
         else if (command.trim().equalsIgnoreCase("s")) {}
         else if (command.trim().equalsIgnoreCase("p")) {}
     }
+
+
 }
 
 
@@ -72,14 +81,19 @@ public class Hw02 {
         SkipList skiplist = new SkipList();
         ProcessCommands process = new ProcessCommands();
 
-        String fileName = "";
+        String fileName = args[0];
+        
+        System.out.println("For the input file named " + args[0]);
 
-        for(int i = 0; i < args.length; i++) {
-            fileName = args[i];
-            System.out.println("For the input file named " + fileName);
-            //System.out.println("With the RNG " + rngBool);
-            System.out.println("the current Skip List is shown below:");
-        }
+        String seedRandomNumGen = args[1];
+
+        if(args[1].trim().equalsIgnoreCase("r"))
+            System.out.println("With the RNG seeded");
+        else
+            System.out.println("With the RNG unseeded");
+
+        System.out.println("the current Skip List is shown below:");
+
 
         File file = new File(args[0]);
 
@@ -103,6 +117,7 @@ public class Hw02 {
         } catch (Exception e) {
             e.printStackTrace();
         }
+
 
         complexityIndicator();
     }
