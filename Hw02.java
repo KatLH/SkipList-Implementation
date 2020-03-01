@@ -6,7 +6,7 @@
 *   Session #2 (2/16): 1pm - 3pm = 2
 *   Session #3 (2/28): 9am - 5pm = 8
 *   Session #4 (2/29): 5pm - 9pm = 4
-*   Session #5 (3/1): 9:30 AM -
+*   Session #5 (3/1): 9:00 AM - 1pm = 4
 *   Session #6 ():
 *   Session #7 ():
 *   Session #8 ():
@@ -99,14 +99,12 @@ class SkipList {
     }
 
     // find(k): find the largest key x <= k on the lowest level of the skip list
-    public SkipNode find(String k) {
+    public SkipNode find(String k, Integer val) {
         SkipNode node = head;
-        int nodeLenth = node.right.key.length();
-        int kLength = k.length();
 
         while(true) {
             // Search right until a larger entry is found
-            while( (node.right.key) != SkipNode.posInf && (node.right.key).compareTo(k) <= 0) {
+            while( (node.right.key) != SkipNode.posInf && node.right.value <= val ) {
                 node = node.right;
             }
 
@@ -121,10 +119,11 @@ class SkipList {
         // If k is NOT FOUND: return reference to next smallest entry of key k
         return node;
     }
+    */
 
     //SEARCH(): Calls find(k) and returns value associated with key k
-    public Integer search(String k) {
-        SkipNode node = find(k);
+    public Integer search(String k, Integer val) {
+        SkipNode node = find(k, val);
 
         if( k.equals(node.getKey()) ) {
             System.out.println(k + " found");
@@ -139,7 +138,7 @@ class SkipList {
     // Insert(k, val)
     public Integer insert(String k, Integer val) {
         SkipNode newNode;
-        SkipNode current = find(k);
+        SkipNode current = find(k, val);
 
         // Check if key is found
         if( k.equals(current.getKey()) ) {
@@ -202,8 +201,8 @@ class SkipList {
     }
 
     // DELETE(): Removes the key-value pair with a specified key
-    public Integer delete (String k) {
-        SkipNode node = find(k);
+    public Integer delete (String k, Integer val) {
+        SkipNode node = find(k, val);
 
         if( k.equals(node.getKey()) ) {
             while(node != null) {
@@ -296,11 +295,15 @@ class ProcessCommands {
         }
         else if (command.trim().equalsIgnoreCase("d")) {
             String key = strArray[1];
-            skiplist.delete(key);
+            int value = 0;
+            value = Integer.parseInt(strArray[1]);
+            skiplist.delete(key, value);
         }
         else if (command.trim().equalsIgnoreCase("s")) {
             String key = strArray[1];
-            skiplist.search(key);
+            int value = 0;
+            value = Integer.parseInt(strArray[1]);
+            skiplist.search(key, value);
         }
         else if (command.trim().equalsIgnoreCase("p")) {
             System.out.println("the current Skip List is shown below: ");
@@ -325,7 +328,7 @@ public class Hw02 {
         File file = new File(args[0]);
         String fileName = args[0];
 
-        System.out.println("\nFor the input file named " + fileName);
+        System.out.println("For the input file named " + fileName);
         if(args.length == 2 && args[1].trim().equalsIgnoreCase("r")) {
             System.out.println("With the RNG seeded,");
             skiplist = new SkipList(r);
