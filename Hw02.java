@@ -2,11 +2,16 @@
 *   Written by: Katherine Hurst
 *   02/13/2020
 *   COP3503 - Hw02: Skip List Implementation
-*   Session #1 (2/13): 12pm - 1pm
-*   Session #2 (2/16): 1pm - 3pm
-*   Session #3 (2/28): 9am - 5pm
-*   Session #4 ():
-*   Session #5 ():
+*   Session #1 (2/13): 12pm - 1pm = 1
+*   Session #2 (2/16): 1pm - 3pm = 2
+*   Session #3 (2/28): 9am - 5pm = 8
+*   Session #4 (2/29): 5pm - 9pm = 4
+*   Session #5 (3/1): 9:30 AM -
+*   Session #6 ():
+*   Session #7 ():
+*   Session #8 ():
+*   Session #9 ():
+*   Session #10 ():
 */
 import java.io.*;
 import java.util.*;
@@ -17,8 +22,8 @@ class SkipNode {
     public SkipNode up, down, left, right;
     public int position;
 
-    public static String negInf = new String("--infinity"); 
-    public static String posInf = new String("++infinity");
+    public static String negInf = new String("---infinity");
+    public static String posInf = new String("+++infinity");
 
     public SkipNode(String k, Integer v) {
         key = k;
@@ -34,11 +39,11 @@ class SkipNode {
         return value;
     }
 
-    public boolean equals(Object o) {
+    public boolean equals(Object obj) {
         SkipNode node;
 
         try {
-            node = (SkipNode) o;
+            node = (SkipNode) obj;
         }
         catch(ClassCastException e) {
             return false;
@@ -49,10 +54,8 @@ class SkipNode {
 }
 
 class SkipList {
-    public SkipNode head;
-    public SkipNode tail;
-    public int numEntriesInSkipList;
-    public int height;
+    public SkipNode head, tail;
+    public int numEntriesInSkipList, height, lvl;
     public Random r;
 
     // Constructor method
@@ -66,28 +69,44 @@ class SkipList {
 
         head = neg;
         tail = pos;
-        
+
         numEntriesInSkipList = 0;
         height = 0;
+        lvl = 0;
+        r = new Random(42);
+    }
+
+    // Constructor method for specified seeded random number generator
+    public SkipList(boolean seeded) {
+        SkipNode neg = new SkipNode(SkipNode.negInf, null);
+        SkipNode pos = new SkipNode(SkipNode.posInf, null);
+
+        // Link --Infinity and ++Infinity together
+        neg.right = pos;
+        pos.left = neg;
+
+        head = neg;
+        tail = pos;
+
+        numEntriesInSkipList = 0;
+        height = 0;
+        lvl = 0;
         r = new Random();
     }
 
-    public Integer randomNumGen(boolean seeded) {
-        if(seeded == false) {
-            r.setSeed(42);
-            return r.nextInt() % 2;
-        }
-        else
-            return r.nextInt() % 2;
+    public Integer randomNumGen() {
+        return r.nextInt() % 2;
     }
 
     // find(k): find the largest key x <= k on the lowest level of the skip list
     public SkipNode find(String k) {
         SkipNode node = head;
+        int nodeLenth = node.right.key.length();
+        int kLength = k.length();
 
         while(true) {
             // Search right until a larger entry is found
-            while( (node.right.key) != SkipNode.posInf && (node.right.key).compareTo(k) <= 0 ) {
+            while( (node.right.key) != SkipNode.posInf && (node.right.key).compareTo(k) <= 0) {
                 node = node.right;
             }
 
@@ -98,10 +117,8 @@ class SkipList {
                 break; // Lowest level reached
         }
 
-        /*
-         * If k is FOUND: return reference to entry containing key k
-         * If k is NOT FOUND: return reference to next smallest entry of key k
-         */ 
+        // If k is FOUND: return reference to entry containing key k
+        // If k is NOT FOUND: return reference to next smallest entry of key k
         return node;
     }
 
@@ -109,41 +126,39 @@ class SkipList {
     public Integer search(String k) {
         SkipNode node = find(k);
 
-        if( k.equals(node.getKey()) )
+        if( k.equals(node.getKey()) ) {
+            System.out.println(k + " found");
             return node.value;
-        else
+        }
+        else {
+            System.out.println(k + " NOT FOUND");
             return null;
+        }
     }
 
     // Insert(k, val)
-    public Integer insert(String k, Integer val, boolean seeded) {
-        SkipNode p, q;
-        int lvl = 0;
+    public Integer insert(String k, Integer val) {
+        SkipNode newNode;
+        SkipNode current = find(k);
 
         // Check if key is found
-        p = find(k);
-        if( k.equals(p.getKey()) ) {
-            return val;
+        if( k.equals(current.getKey()) ) {
             // Update the value
-            /*
-            Integer prevVal = p.value;
-            p.value = val;
+            Integer prevVal = current.value;
+            current.value = val;
             return prevVal;
-            */
         }
 
         // Insert new entry into lowest level
-        q = new SkipNode(k, val);
-        q.left = p;
-        q.right = p.right;
-        p.right.left = q;
-        p.right = q;
+        newNode = new SkipNode(k, val);
+        newNode.left = current;
+        newNode.right = current.right;
+        current.right.left = newNode;
+        current.right = newNode;
 
-        while(randomNumGen(seeded) == 1) {
+        while(randomNumGen() == 1) {
             // If top level has been reached, create a new empty top layer
             if(lvl >= height) {
-                System.out.println("\tCreate Empty Top Layer:\nlvl: " + lvl + " >= height: " + height); // FIXME
-
                 SkipNode neg = new SkipNode(SkipNode.negInf, null);
                 SkipNode pos = new SkipNode(SkipNode.posInf, null);
 
@@ -161,71 +176,80 @@ class SkipList {
                 tail = pos;
 
                 height += 1;
-
-                System.out.println("\theight = " + height); // FIXME
             }
 
-            // Find first node with up link
-            while(p.up == null)
-                p = p.left;
+            // Find first current with up link
+            while(current.up == null)
+                current = current.left;
 
-            p = p.up; // Set p to point to Up node
+            current = current.up; // Set current to point to Up current
 
             SkipNode node = new SkipNode(k, null); // Add node to the column
-            node.left = p;
-            node.right = p.right;
-            node.down = q;
+            node.left = current;
+            node.right = current.right;
+            node.down = newNode;
 
-            p.right.left = node;
-            p.right = node;
-            q.up = node;
+            current.right.left = node;
+            current.right = node;
+            newNode.up = node;
 
-            q = node;
+            newNode = node;
             lvl += 1;
-            System.out.println("\tlvl = " + lvl); // FIXME
         }
 
         numEntriesInSkipList += 1;
-
-        return null; 
+        return null;
     }
 
     // DELETE(): Removes the key-value pair with a specified key
-    public Integer delete (String key) {
-        return null;
+    public Integer delete (String k) {
+        SkipNode node = find(k);
+
+        if( k.equals(node.getKey()) ) {
+            while(node != null) {
+                node.left.right = node.right;
+                node.right.left = node.left;
+                node = node.down;
+            }
+            System.out.println(k + " deleted");
+            return 1;
+        }
+        else {
+            System.out.println(k + " integer not found - delete not successful");
+            return 0;
+        }
     }
 
     public void printAll() {
         String s = "";
-        SkipNode p = head;
+        SkipNode node = head;
 
-        while(p.down != null)
-            p = p.down;
+        while(node.down != null)
+            node = node.down;
 
-        while(p != null) {
-            s = getOneColumn(p);
+        while(node != null) {
+            s = getOneColumn(node);
             System.out.println(s);
-            p = p.right;
+            node = node.right;
         }
     }
 
-    public String getOneColumn(SkipNode p) {
+    public String getOneColumn(SkipNode node) {
         String s = "";
 
-        if(p.up == null)
-            s = s + p.key;
-        else {
-            while(p != null) {
-            //s = " " + p.key;
-            s = s + p.key + "; ";
-            p = p.up;
+        while(node != null) {
+            if(node.key == SkipNode.negInf || node.key == SkipNode.posInf) {
+                s = s + node.key;
+                return s;
             }
+            else
+                s = s + " " + node.key + "; ";
+
+            node = node.up;
         }
-        
+
         return s;
     }
-
-    
 }
 
 
@@ -261,26 +285,27 @@ class ProcessCommands {
     }
 
     // Runs commands one by one from array List
-    void runCommands(String[] strArray, SkipList skiplist, boolean seeded) {
+    void runCommands(String[] strArray, SkipList skiplist) {
         String command = strArray[0];
 
         if (command.trim().equalsIgnoreCase("i")) {
             String key = strArray[1];
             int value = 0;
             value = Integer.parseInt(strArray[1]);
-            skiplist.insert(key, value, seeded);
+            skiplist.insert(key, value);
         }
         else if (command.trim().equalsIgnoreCase("d")) {
-            //int value = 0;
-            //value = Integer.parseInt(strArray[1]);
-            //result = skiplist.delete(key);
+            String key = strArray[1];
+            skiplist.delete(key);
         }
         else if (command.trim().equalsIgnoreCase("s")) {
             String key = strArray[1];
             skiplist.search(key);
         }
         else if (command.trim().equalsIgnoreCase("p")) {
+            System.out.println("the current Skip List is shown below: ");
             skiplist.printAll();
+            System.out.println("---End of Skip List---");
         }
     }
 }
@@ -288,13 +313,14 @@ class ProcessCommands {
 
 public class Hw02 {
     static void complexityIndicator() {
-        System.err.println("ka119724;0;0");
+        // (NID;difficultyRating;hoursSpentOnAssignment)
+        System.err.println("ka119724;0;15");
     }
 
     public static void main(String[] args) throws IOException {
-        SkipList skiplist = new SkipList();
         ProcessCommands process = new ProcessCommands();
-        boolean seeded = false;
+        SkipList skiplist;
+        boolean r = true;
 
         File file = new File(args[0]);
         String fileName = args[0];
@@ -302,35 +328,32 @@ public class Hw02 {
         System.out.println("\nFor the input file named " + fileName);
         if(args.length == 2 && args[1].trim().equalsIgnoreCase("r")) {
             System.out.println("With the RNG seeded,");
-            seeded = true;
+            skiplist = new SkipList(r);
         }
-        else
+        else {
             System.out.println("With the RNG unseeded,");
-
-        System.out.println("the current Skip List is shown below:");
+            skiplist = new SkipList();
+        }
 
         try {
             BufferedReader br = new BufferedReader(new FileReader(file));
-
             String fileContents = "";
             int val;
 
             while((val = br.read()) != -1)
                 fileContents = fileContents + (char) val;
 
-            //System.out.print(fileContents);
             br.close();
 
             List<String> lines = process.getCommands(fileName);
             for(String line : lines) {
                 String[] strArray = line.split(" ");
-                process.runCommands(strArray, skiplist, seeded);
+                process.runCommands(strArray, skiplist);
             }
 
         } catch (Exception e) {
             e.printStackTrace();
         }
-
         complexityIndicator();
     }
 
