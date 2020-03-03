@@ -1,18 +1,8 @@
-/*
-*   Written by: Katherine Hurst
-*   02/13/2020
-*   COP3503 - Hw02: Skip List Implementation
-*   Session #1 (2/13): 12pm - 1pm = 1
-*   Session #2 (2/16): 1pm - 3pm = 2
-*   Session #3 (2/28): 9am - 5pm = 8
-*   Session #4 (2/29): 5pm - 9pm = 4
-*   Session #5 (3/1): 9:00 AM - 1pm = 4
-*   Session #6 ():
-*   Session #7 ():
-*   Session #8 ():
-*   Session #9 ():
-*   Session #10 ():
-*/
+/**
+ *   Written by: Katherine Hurst
+ *   02/13/2020
+ *   COP3503 - Hw02: Skip List Implementation
+ */
 import java.io.*;
 import java.util.*;
 
@@ -60,8 +50,8 @@ class SkipList {
 
     // Constructor method
     public SkipList() {
-        SkipNode neg = new SkipNode(SkipNode.negInf, null);
-        SkipNode pos = new SkipNode(SkipNode.posInf, null);
+        SkipNode neg = new SkipNode(SkipNode.negInf, -1);
+        SkipNode pos = new SkipNode(SkipNode.posInf, 100000);
 
         // Link --Infinity and ++Infinity together
         neg.right = pos;
@@ -78,8 +68,8 @@ class SkipList {
 
     // Constructor method for specified seeded random number generator
     public SkipList(boolean seeded) {
-        SkipNode neg = new SkipNode(SkipNode.negInf, null);
-        SkipNode pos = new SkipNode(SkipNode.posInf, null);
+        SkipNode neg = new SkipNode(SkipNode.negInf, -1);
+        SkipNode pos = new SkipNode(SkipNode.posInf, 100000);
 
         // Link --Infinity and ++Infinity together
         neg.right = pos;
@@ -104,7 +94,7 @@ class SkipList {
 
         while(true) {
             // Search right until a larger entry is found
-            while( (node.right.key) != SkipNode.posInf && node.right.value <= val ) {
+            while( (node.right.key) != SkipNode.posInf && (node.right.value).compareTo(val) <= 0 ) {
                 node = node.right;
             }
 
@@ -115,13 +105,14 @@ class SkipList {
                 break; // Lowest level reached
         }
 
-        // If k is FOUND: return reference to entry containing key k
-        // If k is NOT FOUND: return reference to next smallest entry of key k
+        /**
+         * If k is FOUND: return reference to entry containing key k
+         * If k is NOT FOUND: return reference to next smallest entry of key k
+         */
         return node;
     }
-    */
 
-    //SEARCH(): Calls find(k) and returns value associated with key k
+    // SEARCH(): Calls find(k) and returns value associated with key k
     public Integer search(String k, Integer val) {
         SkipNode node = find(k, val);
 
@@ -158,8 +149,8 @@ class SkipList {
         while(randomNumGen() == 1) {
             // If top level has been reached, create a new empty top layer
             if(lvl >= height) {
-                SkipNode neg = new SkipNode(SkipNode.negInf, null);
-                SkipNode pos = new SkipNode(SkipNode.posInf, null);
+                SkipNode neg = new SkipNode(SkipNode.negInf, -1);
+                SkipNode pos = new SkipNode(SkipNode.posInf, 100000);
 
                 neg.right = pos;
                 neg.down = head;
@@ -183,7 +174,7 @@ class SkipList {
 
             current = current.up; // Set current to point to Up current
 
-            SkipNode node = new SkipNode(k, null); // Add node to the column
+            SkipNode node = new SkipNode(k, val); // Add node to the column
             node.left = current;
             node.right = current.right;
             node.down = newNode;
@@ -204,19 +195,20 @@ class SkipList {
     public Integer delete (String k, Integer val) {
         SkipNode node = find(k, val);
 
-        if( k.equals(node.getKey()) ) {
-            while(node != null) {
-                node.left.right = node.right;
-                node.right.left = node.left;
-                node = node.down;
-            }
-            System.out.println(k + " deleted");
-            return 1;
-        }
-        else {
+        if( k.equals(node.getKey()) == false) {
             System.out.println(k + " integer not found - delete not successful");
             return 0;
         }
+
+        while(node != null) {
+            node.left.right = node.right;
+            node.right.left = node.left;
+            node = node.up;
+        }
+        
+        System.out.println(k + " deleted");
+
+        return 1;
     }
 
     public void printAll() {
@@ -246,7 +238,6 @@ class SkipList {
 
             node = node.up;
         }
-
         return s;
     }
 }
@@ -289,19 +280,19 @@ class ProcessCommands {
 
         if (command.trim().equalsIgnoreCase("i")) {
             String key = strArray[1];
-            int value = 0;
+            Integer value = 0;
             value = Integer.parseInt(strArray[1]);
             skiplist.insert(key, value);
         }
         else if (command.trim().equalsIgnoreCase("d")) {
             String key = strArray[1];
-            int value = 0;
+            Integer value = 0;
             value = Integer.parseInt(strArray[1]);
             skiplist.delete(key, value);
         }
         else if (command.trim().equalsIgnoreCase("s")) {
             String key = strArray[1];
-            int value = 0;
+            Integer value = 0;
             value = Integer.parseInt(strArray[1]);
             skiplist.search(key, value);
         }
@@ -313,22 +304,20 @@ class ProcessCommands {
     }
 }
 
-
 public class Hw02 {
     static void complexityIndicator() {
-        // (NID;difficultyRating;hoursSpentOnAssignment)
-        System.err.println("ka119724;0;15");
+        System.err.println("ka119724;3;20");
     }
 
     public static void main(String[] args) throws IOException {
         ProcessCommands process = new ProcessCommands();
         SkipList skiplist;
         boolean r = true;
-
         File file = new File(args[0]);
         String fileName = args[0];
 
         System.out.println("For the input file named " + fileName);
+
         if(args.length == 2 && args[1].trim().equalsIgnoreCase("r")) {
             System.out.println("With the RNG seeded,");
             skiplist = new SkipList(r);
@@ -359,5 +348,5 @@ public class Hw02 {
         }
         complexityIndicator();
     }
-
+    
 }
